@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using Entities.Concrete;
 
-namespace DataAccess.Abstract
+namespace Business.Abstract
 {
-    public interface ICarDal:IEntityRepository<Car>
+    public interface IBrandService
     {
+        List<Brand> GetAll();
+        
+        
     }
 }
