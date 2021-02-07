@@ -19,5 +19,18 @@ namespace Business.Concrete
         {
             return _brandDal.GetAll();
         }
+
+        public void Add(Brand brand)
+        {
+            if (brand.Name.Length>2)
+            {
+                _brandDal.Add(brand);
+                Console.WriteLine("Marka kayıt edildi");
+            }
+            else
+            {
+                Console.WriteLine("Kayıt başarısız");
+            }
+        }
     }
 }
