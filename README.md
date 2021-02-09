@@ -1,6 +1,7 @@
 # CarRentalDemoProject
 
 Aynı Projeyi geliştiriyoruz,
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Engin Demiroğ Kamp Kurs 9. Gün Ödev1
 
@@ -18,7 +19,7 @@ Arabaları şu bilgiler olacak şekilde listeleyiniz. CarName, BrandName, ColorN
 Kodlarınızı Github hesabınızda paylaşıp link veriniz.
 Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 Engin Demiroğ Kamp kurs 8. Gün Ödev 1
