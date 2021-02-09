@@ -38,7 +38,7 @@ namespace ConsoleUI
                 Console.WriteLine("{0} id {1} Marka numaralı {2} renk numaralı {3} günlük fiyatlı {4} Model yılında {5} araç",
                     car.Id,car.BrandId,car.ColorId,car.DailyPrice,car.ModelYear,car.Description);
             }
-
+            Console.WriteLine("------------------------------------------------------------------");
 
         }
     }
