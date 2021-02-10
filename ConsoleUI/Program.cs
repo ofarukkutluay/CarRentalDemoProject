@@ -24,6 +24,7 @@ namespace ConsoleUI
             }
 
             Console.WriteLine("------------------------------------------------------------------");
+            
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
             foreach (var brand in brandManager.GetAll()) //Tüm markaları listeler
@@ -37,6 +38,12 @@ namespace ConsoleUI
             {
                 Console.WriteLine("{0} id {1} Marka numaralı {2} renk numaralı {3} günlük fiyatlı {4} Model yılında {5} araç",
                     car.Id,car.BrandId,car.ColorId,car.DailyPrice,car.ModelYear,car.Description);
+            }
+            Console.WriteLine("------------------------------------------------------------------");
+            foreach (var car in carManager.GetCarDetails()) // ColorId 1 yani beyaz olanları listeler
+            {
+                Console.WriteLine("{0} id {1} Marka numaralı {2} renk numaralı {3} günlük fiyatlı {4} Model yılında {5} araç",
+                    car.Id, car.BrandName, car.ColorName, car.DailyPrice, car.ModelYear, car.Description);
             }
             Console.WriteLine("------------------------------------------------------------------");
 
