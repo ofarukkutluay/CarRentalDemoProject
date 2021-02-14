@@ -13,8 +13,7 @@ namespace ConsoleUI
             //CarTest();
             //BrandTest();
 
-            CarManager carManager = new CarManager(new EfCarDal());
-            carManager.Update(1)
+            
 
         }
 
@@ -53,7 +52,6 @@ namespace ConsoleUI
 
             Console.WriteLine("------------------------------------------------------------------");
 
-            CarManager carManager = new CarManager(new EfCarDal());
             var result = carManager.GetCarDetails();
 
             if (result.Success == true)
@@ -73,7 +71,7 @@ namespace ConsoleUI
         {
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
-            foreach (var brand in brandManager.GetAll()) //Tüm markaları listeler
+            foreach (var brand in brandManager.GetAll().Data) //Tüm markaları listeler
             {
                 Console.WriteLine(brand.Name);
             }

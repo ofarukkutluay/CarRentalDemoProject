@@ -12,8 +12,13 @@ namespace Business.Constants
         public static string CarsListed = " Tüm araçlar getirildi";
         public static string CarUpdated = "Araç güncellendi";
         public static string CarDeleted = "Araç Silindi";
-        internal static string BrandInvalidError;
+        public static string BrandInvalidError = "Araç markası 2 karakterden fazla olmalıdır";
+        public static string BrandAdded = "Araç markası eklendi";
+        public static string BrandUpdated = "Araç markası Güncellendi";
+        public static string BrandDeleted = "Araç markası silindi";
+        public static string ColorAdded = "Renk eklendi";
+        public static string ColorUpdated = "Renk Güncellendi";
+        public static string ColorDeleted = "Renk silindi";
 
-        public static string BrandAdded { get; internal set; }
     }
 }

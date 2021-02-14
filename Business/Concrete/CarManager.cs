@@ -41,13 +41,13 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
         }
 
-        public IResult Add(Car car)
+        public IResult Add(Car entity)
         {
-            if (car.DailyPrice<=0)
+            if (entity.DailyPrice<=0)
             {
                 return new ErrorResult(Messages.CarDailyPriceInvalid);
             }
-            _carDal.Add(car);
+            _carDal.Add(entity);
             return new SuccessResult(Messages.CarAdded);
            
         }
@@ -62,16 +62,16 @@ namespace Business.Concrete
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == id)) ;
         }
 
-        public IResult Update(int id)
+        public IResult Update(Car entity)
         {
-            Car car = (Car)GetById(id);
-            _carDal.Update(car);
+            
+            _carDal.Update(entity);
             return new SuccessResult(Messages.CarUpdated);
         }
 
-        public IResult Delete(Car car)
+        public IResult Delete(Car entity)
         {
-            _carDal.Delete(car);
+            _carDal.Delete(entity);
             return new SuccessResult(Messages.CarDeleted);
         }
     }

@@ -18,11 +18,11 @@ namespace Business.Concrete
             _brandDal = brandDal;
         }
 
-        public IResult Add(Brand brand)
+        public IResult Add(Brand entity)
         {
-            if (brand.Name.Length > 2)
+            if (entity.Name.Length > 2)
             {
-                _brandDal.Add(brand);
+                _brandDal.Add(entity);
                 return new SuccessResult(Messages.BrandAdded);
             }
 
@@ -31,17 +31,19 @@ namespace Business.Concrete
 
         public IDataResult<Brand> GetById(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Brand>(_brandDal.Get(b => b.Id == id));
         }
 
-        public IResult Update(Brand brand)
+        public IResult Update(Brand entity)
         {
-            throw new NotImplementedException();
+            _brandDal.Update(entity);
+            return new SuccessResult(Messages.BrandUpdated);
         }
 
-        public IResult Delete(Brand brand)
+        public IResult Delete(Brand entity)
         {
-            throw new NotImplementedException();
+            _brandDal.Delete(entity);
+            return new SuccessResult(Messages.BrandDeleted);
         }
 
         public IDataResult<List<Brand>> GetAll()

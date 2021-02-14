@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Core.Business;
-using Core.Utilities.Results;
 using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface IColorService:IServiceRepository<Color>
+    public interface ICustomerService:IServiceRepository<Customer>
     {
     }
 }
