@@ -28,6 +28,6 @@ namespace Business.Constants
         public static string RentalAdded = "Müşteri eklendi";
         public static string RentalUpdated = "Müşteri güncellendi";
         public static string RentalDeleted = "Müşteri silindi";
-
+        public static string RentalReturnDateInvalidError = "Teslim edilmemiş araç kiralanamaz";
     }
 }

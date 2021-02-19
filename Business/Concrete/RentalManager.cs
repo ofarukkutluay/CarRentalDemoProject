@@ -6,6 +6,7 @@ using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -25,9 +26,16 @@ namespace Business.Concrete
 
         public IResult Add(Rental entity)
         {
-            //geri teslim olmamış araç kiralanamaz eklenecek 
+            //var result = _rentalDal.Get(r => r.CarId == entity.CarId).ReturnDate.Year == null ? false : true;
+            ////geri teslim olmamış araç kiralanamaz eklenecek 
+            //if (entity.ReturnDate == null && result == false)
+            //{
+            //    return new ErrorResult(Messages.RentalReturnDateInvalidError);
+            //}
             _rentalDal.Add(entity);
             return new SuccessResult(Messages.RentalAdded);
+            
+
         }
 
         public IDataResult<Rental> GetById(int id)
@@ -45,6 +53,11 @@ namespace Business.Concrete
         {
             _rentalDal.Delete(entity);
             return new SuccessResult(Messages.RentalDeleted);
+        }
+
+        public IDataResult<List<RentalDetailDto>> GetRentalDetails()
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
         }
     }
 }

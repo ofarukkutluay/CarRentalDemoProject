@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlTypes;
 using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
@@ -12,8 +13,26 @@ namespace ConsoleUI
         {
             //CarTest();
             //BrandTest();
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
 
-            
+            rentalManager.Add(new Rental
+            {
+                CarId = 2,
+                CustomerId = 1,
+                RentDate = new DateTime(2020,10,5)
+            });
+            //rentalManager.Delete(new Rental
+            //{
+            //    Id = 9
+            //});
+
+            foreach (var rental in rentalManager.GetRentalDetails().Data)
+            {
+                Console.WriteLine("{0} {1} {2} {3} {4} {5}",
+                    rental.Id,rental.CarBrandName,rental.CustomerName,rental.UserName,rental.RentDate,rental.ReturnDate);
+            }
+
+
 
         }
 
