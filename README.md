@@ -2,6 +2,31 @@
 
 Aynı Projeyi geliştiriyoruz,
 -------------------------------------------------------------------------------------------------------------------------------------
+Engin Demiroğ Kamp Kurs 12. Gün Ödev1-2-3
+
+Ödev içeriği;
+
+Car Rental Projenize Autofac desteği ekleyiniz.
+
+Car Rental Projenize FluentValidation desteği ekleyiniz.
+
+Car Rental Projenize AOP desteği ekleyiniz.
+
+ValidationAspect ekleyiniz.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Engin Demiroğ Kamp Kurs 11. Gün Ödev1
+
+Ödev içeriği;
+
+CarRental projenizde;
+
+WebAPI katmanını kurunuz.
+Business katmanındaki tüm servislerin Api karşılığını yazınız.
+Postman'de test ediniz.
+Kodlarınızı paylaşınız.
+
+-------------------------------------------------------------------------------------------------------------------------------------
 Engin Demiroğ Kamp Kurs 10. Gün Ödev4
 
 Ödev içeriği;
