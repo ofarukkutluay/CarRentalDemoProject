@@ -26,15 +26,15 @@ namespace Business.Concrete
 
         public IResult Add(Rental entity)
         {
-            //var result = _rentalDal.Get(r => r.CarId == entity.CarId).ReturnDate.Year == null ? false : true;
-            ////geri teslim olmamış araç kiralanamaz eklenecek 
-            //if (entity.ReturnDate == null && result == false)
-            //{
-            //    return new ErrorResult(Messages.RentalReturnDateInvalidError);
-            //}
-            _rentalDal.Add(entity);
-            return new SuccessResult(Messages.RentalAdded);
             
+            if (CheckCarReturnDate(entity.CarId).Success)
+            {
+                _rentalDal.Add(entity);
+                return new SuccessResult(Messages.RentalAdded);
+            }
+
+            return new ErrorResult();
+
 
         }
 
@@ -58,6 +58,17 @@ namespace Business.Concrete
         public IDataResult<List<RentalDetailDto>> GetRentalDetails()
         {
             return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
+        }
+
+        private IResult CheckCarReturnDate(int carId)
+        {
+            var result = _rentalDal.Get(c => c.CarId == carId).ReturnDate.Year > 0001;
+            if (result)
+            {
+                return new ErrorResult(Messages.RentalReturnDateInvalidError);
+            }
+
+            return new SuccessResult();
         }
     }
 }

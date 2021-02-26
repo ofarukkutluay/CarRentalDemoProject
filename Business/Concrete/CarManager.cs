@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -20,15 +25,9 @@ namespace Business.Concrete
 
         public IDataResult<List<Car>> GetAll()
         {
-            if (DateTime.Now.Hour==01)
-            {
-                return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
-            }
-            else
-            {
-                return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsListed);
-            }
             
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsListed);
+
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int id)
@@ -41,15 +40,13 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
         }
 
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car entity)
         {
-            if (entity.DailyPrice<=0)
-            {
-                return new ErrorResult(Messages.CarDailyPriceInvalid);
-            }
+            
             _carDal.Add(entity);
             return new SuccessResult(Messages.CarAdded);
-           
+
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
@@ -74,5 +71,8 @@ namespace Business.Concrete
             _carDal.Delete(entity);
             return new SuccessResult(Messages.CarDeleted);
         }
+
+        
+        
     }
 }

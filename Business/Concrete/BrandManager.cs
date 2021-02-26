@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Business.Abstract;
 using Business.Constants;
@@ -20,10 +21,13 @@ namespace Business.Concrete
 
         public IResult Add(Brand entity)
         {
-            if (entity.Name.Length > 2)
+            if (entity.Name.Length > 2 )
             {
-                _brandDal.Add(entity);
-                return new SuccessResult(Messages.BrandAdded);
+                if (CheckIfBrandNameExists(entity.Name).Success)
+                {
+                    _brandDal.Add(entity);
+                    return new SuccessResult(Messages.BrandAdded);
+                }
             }
 
             return new ErrorResult(Messages.BrandInvalidError);
@@ -50,6 +54,16 @@ namespace Business.Concrete
         {
 
             return new SuccessDataResult<List<Brand>>(_brandDal.GetAll());
+        }
+
+        private IResult CheckIfBrandNameExists(string brandName)
+        {
+            if (_brandDal.GetAll(b=>b.Name.ToLower()==brandName.ToLower()).Any())
+            {
+                return new ErrorResult(Messages.BrandNameAlreadyExists);
+            }
+
+            return new SuccessResult();
         }
 
         
