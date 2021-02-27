@@ -46,11 +46,13 @@ namespace Business.Concrete
 
         public IResult Update(CarImage entity)
         {
+            _carImageDal.Update(entity);
             return new SuccessResult(Messages.CarImageUpdated);
         }
 
         public IResult Delete(CarImage entity)
         {
+            _carImageDal.Delete(entity);
             return new SuccessResult(Messages.CarImageDeleted);
         }
 
@@ -61,12 +63,14 @@ namespace Business.Concrete
         
         private IResult CheckIfCountOfImageCorrect(int carId)
         {
-            if (_carImageDal.GetAll(ci=>ci.CarId==carId).Count >= 5)
+            if (_carImageDal.GetAll(ci=>ci.CarId==carId).Count <= 5)
             {
-                return new ErrorResult(Messages.CarImageCountOfImageError);
+                return new SuccessResult();
             }
 
-            return new SuccessResult();
+            return new ErrorResult(Messages.CarImageCountOfImageError);
         }
+        
+        
     }
 }
