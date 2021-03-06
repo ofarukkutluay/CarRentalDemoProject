@@ -99,22 +99,22 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 *  Tüm nesneler için Entitiy Framework altyapısı kuruldu.
 *  "CarManager" da GetCarsByBrandId , GetCarsByColorId servisleri yazıldı.
 *  If-else yapısı ile Add operasyonunda aşağıdaki kurallar getirildi,
-  *  Araba ismi minimum 2 karakter olmalıdır
-  *  Araba günlük fiyatı 0'dan büyük olmalıdır.
+   *  Araba ismi minimum 2 karakter olmalıdır
+   *  Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 #### Ödev İçeriği;
 Araba Kiralama projemiz üzerinde çalışmaya devam edeceğiz.
-Car nesnesine ek olarak;
-Brand ve Color nesneleri ekleyiniz(Entity)
-Brand-->Id,Name
-Color-->Id,Name
-Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz. (Araştırma)
-Sisteme Generic IEntityRepository altyapısı yazınız.
-Car, Brand ve Color nesneleri için Entity Framework altyapısını yazınız.
-GetCarsByBrandId , GetCarsByColorId servislerini yazınız.
-Sisteme yeni araba eklendiğinde aşağıdaki kuralları çalıştırınız.
-Araba ismi minimum 2 karakter olmalıdır
-Araba günlük fiyatı 0'dan büyük olmalıdır.
+ * Car nesnesine ek olarak;
+   * Brand ve Color nesneleri ekleyiniz(Entity)
+    - Brand-->Id,Name
+    - Color-->Id,Name
+ * Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz. (Araştırma)
+ * Sisteme Generic IEntityRepository altyapısı yazınız.
+ * Car, Brand ve Color nesneleri için Entity Framework altyapısını yazınız.
+ * GetCarsByBrandId , GetCarsByColorId servislerini yazınız.
+ * Sisteme yeni araba eklendiğinde aşağıdaki kuralları çalıştırınız.
+   * Araba ismi minimum 2 karakter olmalıdır
+   * Araba günlük fiyatı 0'dan büyük olmalıdır.
 Ödevinize ait github linkini paylaşınız.
 
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -134,7 +134,7 @@ Console da test edildi...
 - Yepyeni bir proje oluşturunuz. Adı ReCapProject olacak. (Tekrar ve geliştirme projesi)
 - Entities, DataAccess, Business ve Console katmanlarını oluşturunuz.
 - Bir araba nesnesi oluşturunuz. "Car"
- - Özellik olarak : Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanlarını ekleyiniz. (Brand = Marka)
+  - Özellik olarak : Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanlarını ekleyiniz. (Brand = Marka)
 - InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazınız.
 
 Consolda test ediniz.
