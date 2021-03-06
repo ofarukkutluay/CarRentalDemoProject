@@ -89,13 +89,18 @@ Kodlarınızı Github hesabınızda paylaşıp link veriniz.
 Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-# Engin Demiroğ Kamp kurs 8. Gün Ödev 1
+### Engin Demiroğ Kamp kurs 8. Gün Ödev 1
 
 #### Yapılanlar;
--
+* "Brand" nesnesi Id, Name alanları ile olıuşturuldu.
+*  "Color" nesenesi Id, Name alanları ile oluşturuldu.
+*  Sql Server da Local de "Cars","Brands" ve "Colors" tabloları oluşturuldu.
+*  IEntitiyRepository generic altyapı ile CRUD operasyonları kuralları yazıldı.
+*  Tüm nesneler için Entitiy Framework altyapısı kuruldu.
+*  "CarManager" da GetCarsByBrandId , GetCarsByColorId servisleri yazıldı.
+*  If-else yapısı ile Add operasyonunda aşağıdaki kurallar getirildi,
+  *  Araba ismi minimum 2 karakter olmalıdır
+  *  Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 #### Ödev İçeriği;
 Araba Kiralama projemiz üzerinde çalışmaya devam edeceğiz.
@@ -113,13 +118,13 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 Ödevinize ait github linkini paylaşınız.
 
 ----------------------------------------------------------------------------------------------------------------------------------
-# Engin Demiroğ Kamp kurs 7. Gün Ödev 2
+### Engin Demiroğ Kamp kurs 7. Gün Ödev 2
 
 #### Yapılanlar;
--ReCapProject ismi CarRentalDemoProject olarak oluşturuldu.
--Entities, DataAccess, Business ve Console katmanlarını oluşturuldu.
--"Car" nesensi Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanları ile oluşturuldu. 
--InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazıldı.
+* ReCapProject ismi CarRentalDemoProject olarak oluşturuldu.
+* Entities, DataAccess, Business ve Console katmanlarını oluşturuldu.
+* "Car" nesensi Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanları ile oluşturuldu. 
+* InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazıldı.
 
 Console da test edildi...
 
