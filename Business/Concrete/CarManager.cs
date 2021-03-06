@@ -24,6 +24,7 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAll()
         {
             
@@ -41,7 +42,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
         }
 
-        [SecuredOperation("car.add")]
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car entity)
         {
@@ -51,6 +52,7 @@ namespace Business.Concrete
 
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails()) ;
