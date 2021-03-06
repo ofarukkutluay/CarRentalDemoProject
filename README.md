@@ -2,6 +2,14 @@
 
 Aynı Projeyi geliştiriyoruz,
 -------------------------------------------------------------------------------------------------------------------------------------------
+Engin Demiroğ Kamp Kurs 14. Gün Ödev 2
+Ödev içeriği;
+
+RentACar projenize JWT entegrasyonu yapınız.
+
+GitHub adresinizi paylaşınız.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 Engin Demiroğ Kamp Kurs 13. Gün Ödev 1
 
 Artık araştırma yapıp, yeni işlemleri projeye ekleyebilmemiz gerekiyor.
@@ -83,32 +91,44 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-Engin Demiroğ Kamp kurs 8. Gün Ödev 1
 
-Ödev İçeriği;
+# Engin Demiroğ Kamp kurs 8. Gün Ödev 1
 
+#### Yapılanlar;
+-
+
+#### Ödev İçeriği;
 Araba Kiralama projemiz üzerinde çalışmaya devam edeceğiz.
-
 Car nesnesine ek olarak;
-
 Brand ve Color nesneleri ekleyiniz(Entity)
 Brand-->Id,Name
-
 Color-->Id,Name
-
 Sql Server tarafında yeni bir veritabanı kurunuz. Cars,Brands,Colors tablolarını oluşturunuz. (Araştırma)
-
 Sisteme Generic IEntityRepository altyapısı yazınız.
-
 Car, Brand ve Color nesneleri için Entity Framework altyapısını yazınız.
-
 GetCarsByBrandId , GetCarsByColorId servislerini yazınız.
-
 Sisteme yeni araba eklendiğinde aşağıdaki kuralları çalıştırınız.
-
 Araba ismi minimum 2 karakter olmalıdır
-
 Araba günlük fiyatı 0'dan büyük olmalıdır.
-
 Ödevinize ait github linkini paylaşınız.
 
+----------------------------------------------------------------------------------------------------------------------------------
+# Engin Demiroğ Kamp kurs 7. Gün Ödev 2
+
+#### Yapılanlar;
+-ReCapProject ismi CarRentalDemoProject olarak oluşturuldu.
+-Entities, DataAccess, Business ve Console katmanlarını oluşturuldu.
+-"Car" nesensi Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanları ile oluşturuldu. 
+-InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazıldı.
+
+Console da test edildi...
+
+
+#### Ödev İçeriği;
+Kampımızla beraber paralelde geliştireceğimiz bir projemiz daha olacak. Araba kiralama sistemi yazıyoruz.
+Yepyeni bir proje oluşturunuz. Adı ReCapProject olacak. (Tekrar ve geliştirme projesi)
+Entities, DataAccess, Business ve Console katmanlarını oluşturunuz.
+Bir araba nesnesi oluşturunuz. "Car"
+Özellik olarak : Id, BrandId, ColorId, ModelYear, DailyPrice, Description alanlarını ekleyiniz. (Brand = Marka)
+InMemory formatta GetById, GetAll, Add, Update, Delete oprasyonlarını yazınız.
+Consolda test ediniz.
