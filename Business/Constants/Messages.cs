@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Entities.Concrete;
 
 namespace Business.Constants
 {
@@ -35,5 +36,12 @@ namespace Business.Constants
         public static string CarImageDeleted="Araç resmi silindi";
         public static string CarImageAdd = "Araç resmi eklendi";
         public static string CarImageCountOfImageError="Araç resmi 5 adetten fazla olamaz!";
+        public static string AuthorizationDenied = "Yetkiniz yok";
+        public static string UserRegistered="Kayıt edildi";
+        public static string UserNotFound="Kullanıcı bulunamadı";
+        public static string PasswordError="Şifre hatalı";
+        public static string SuccessfulLogin="Giriş başarılı";
+        public static string UserAlreadyExists="Kullanıcı Mevcut";
+        public static string AccessTokenCreated="Geçerli Token oluşturuldu";
     }
 }
