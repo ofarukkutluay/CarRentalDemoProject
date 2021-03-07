@@ -2,6 +2,17 @@
 
 #### Aynı Projeyi geliştiriyoruz,
 -------------------------------------------------------------------------------------------------------------------------------------------
+### Engin Demiroğ Kamp Kurs 15. Gün Ödev 1
+
+#### Yapılanlar;
+* JWT ile ilgili ufak hatalar giderildi.
+* Cache, Transaction ve Performance aspectleri yanında Log Aspect i kuruldu.
+* LogAspect projenin tümünde çalışması sağlandı.
+
+#### Ödev içeriği;
+* Cache, Transaction ve Performance aspectlerini ekleyiniz.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 ### Engin Demiroğ Kamp Kurs 14. Gün Ödev 2
 
 #### Yapılanlar;
