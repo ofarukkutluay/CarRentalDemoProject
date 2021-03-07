@@ -80,7 +80,9 @@ namespace WebAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthorization(); //JWT için eklenir
+
+            app.UseAuthentication(); //JWT için eklenir
 
             app.UseEndpoints(endpoints =>
             {

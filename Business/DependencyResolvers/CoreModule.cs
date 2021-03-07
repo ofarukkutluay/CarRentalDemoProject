@@ -11,7 +11,7 @@ namespace Business.DependencyResolvers
     {
         public void Load(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            serviceCollection.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 
         }
     }
