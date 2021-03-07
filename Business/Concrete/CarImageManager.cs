@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Business.Abstract;
-using Business.Constants;
-using Business.DependencyResolvers.Autofac;
+﻿using System.Collections.Generic;
+using Core.Abstract;
+using Core.Constants;
 using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;

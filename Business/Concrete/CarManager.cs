@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using Business.Abstract;
-using Business.BusinessAspects.Autofac;
-using Business.Constants;
-using Business.ValidationRules.FluentValidation;
+﻿using System.Collections.Generic;
+using Core.Abstract;
+using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
-using Core.Utilities.Business;
+using Core.BusinessAspects.Autofac;
+using Core.Constants;
 using Core.Utilities.Results;
+using Core.ValidationRules.FluentValidation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -24,7 +20,8 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        [SecuredOperation("admin")]
+        
+        [CacheAspect]
         public IDataResult<List<Car>> GetAll()
         {
             
@@ -44,6 +41,7 @@ namespace Business.Concrete
 
         [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("ICarService.Get")]
         public IResult Add(Car entity)
         {
             
@@ -52,20 +50,21 @@ namespace Business.Concrete
 
         }
 
-        [SecuredOperation("admin")]
+        
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails()) ;
         }
 
+        [CacheAspect]
         public IDataResult<Car> GetById(int id)
         {
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == id)) ;
         }
 
+        [CacheRemoveAspect("ICarService.Get")]
         public IResult Update(Car entity)
         {
-            
             _carDal.Update(entity);
             return new SuccessResult(Messages.CarUpdated);
         }

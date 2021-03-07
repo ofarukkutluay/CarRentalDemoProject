@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Business.Abstract;
-using Business.Constants;
-using Business.ValidationRules.FluentValidation;
+using Core.Abstract;
+using Core.Constants;
+using Core.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Entities.Concrete;
@@ -12,7 +12,7 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using FluentValidation;
 
-namespace Business.Concrete
+namespace Core.Concrete
 {
     public class UserManager:IUserService
     {

@@ -6,7 +6,7 @@ using Core.Utilities.Results;
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
 
-namespace Business.Abstract
+namespace Core.Abstract
 {
     public interface IAuthService
     {

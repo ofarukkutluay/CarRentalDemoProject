@@ -5,7 +5,7 @@ using Core.Business;
 using Core.Utilities.Results;
 using Entities.Concrete;
 
-namespace Business.Abstract
+namespace Core.Abstract
 {
     public interface IColorService:IServiceRepository<Color>
     {

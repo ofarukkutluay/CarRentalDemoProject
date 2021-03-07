@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlTypes;
 using Business.Concrete;
+using Core.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;

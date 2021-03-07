@@ -6,7 +6,7 @@ using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 
-namespace Business.Abstract
+namespace Core.Abstract
 {
     public interface ICarService:IServiceRepository<Car>
     {

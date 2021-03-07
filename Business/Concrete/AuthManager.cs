@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Business.Abstract;
-using Business.Constants;
+using Core.Abstract;
+using Core.Constants;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
 
-namespace Business.Concrete
+namespace Core.Concrete
 {
     public class AuthManager : IAuthService
     {
