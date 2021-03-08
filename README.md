@@ -6,7 +6,9 @@
 
 #### Yapılanlar;
 * JWT ile ilgili ufak hatalar giderildi.
-* Cache, Transaction ve Performance aspectleri yanında Log Aspect i kuruldu.
+* Cache, Transaction ve Performance aspectleri yazıldı.
+* Loglama için Log4Net paketi yardımı ile LogAspect yazıldı.
+* Dosyaya xml formatında loglanması için FileLogger yazıldı.
 * LogAspect projenin tümünde çalışması sağlandı.
 
 #### Ödev içeriği;
