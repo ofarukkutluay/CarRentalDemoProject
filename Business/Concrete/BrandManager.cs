@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Core.Abstract;
+using Core.Aspects.Autofac.Caching;
 using Core.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -19,6 +20,7 @@ namespace Core.Concrete
             _brandDal = brandDal;
         }
 
+        [CacheRemoveAspect("IBrandService.Get")]
         public IResult Add(Brand entity)
         {
             if (entity.Name.Length > 2 )
@@ -33,23 +35,27 @@ namespace Core.Concrete
             return new ErrorResult(Messages.BrandInvalidError);
         }
 
+        [CacheAspect]
         public IDataResult<Brand> GetById(int id)
         {
             return new SuccessDataResult<Brand>(_brandDal.Get(b => b.Id == id));
         }
 
+        [CacheRemoveAspect("IBrandService.Get")]
         public IResult Update(Brand entity)
         {
             _brandDal.Update(entity);
             return new SuccessResult(Messages.BrandUpdated);
         }
 
+        [CacheRemoveAspect("IBrandService.Get")]
         public IResult Delete(Brand entity)
         {
             _brandDal.Delete(entity);
             return new SuccessResult(Messages.BrandDeleted);
         }
 
+        [CacheAspect]
         public IDataResult<List<Brand>> GetAll()
         {
 

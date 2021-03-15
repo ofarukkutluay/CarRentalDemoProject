@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Core.Abstract;
 using Core.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
-namespace Core.Concrete
+namespace Business.Concrete
 {
     public class CustomerManager:ICustomerService
     {

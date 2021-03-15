@@ -37,6 +37,7 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddControllers();
             //services.AddSingleton<ICarService,CarManager>();
             //services.AddSingleton<ICarDal, EfCarDal>();
@@ -79,6 +80,14 @@ namespace WebAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
+
 
             app.UseAuthorization(); //JWT için eklenir
 
