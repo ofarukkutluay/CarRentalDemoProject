@@ -79,6 +79,8 @@ namespace WebAPI
 
             app.UseHttpsRedirection();
 
+            app.UseStaticFiles(); //image lara ulaþabilmek için
+
             app.UseRouting();
 
             // global cors policy
