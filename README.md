@@ -1,39 +1,16 @@
 ## CarRentalDemoProject
+Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-rental-demo-project
 
 #### Aynı Projeyi geliştiriyoruz,
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 18. Gün Ödev 1
-Angular Projeme gitmek için https://github.com/dRcmd/car-rental-demo-project
+### Engin Demiroğ Kamp Kurs 19. Gün Ödev 3
 
 #### Yapılanlar;
-* Marka listesi oluşturuldu.
-* Renk filtresi oluşturuldu.
-* Kelime ile arama pipe oluşturuldu.
-* Car detail sayfası oluşturuldu.
+* Sahte Payment service yazıldı. 
+* Bazı hatalar giderildi. Proje Elden Geçirildi.
 
 #### Ödev içeriği;
-* Brand listesinde herhangi bir marka seçildiğinde, o markaya ait arabaları listeleyiniz.
-* Color listesinde herhangi bir renk seçildiğinde, o renge ait arabaları listeleyiniz.
-* Car listesinde bir arabaya tıklandığında o arabaya ait detay sayfası oluşturunuz. Bu sayfada bu araca ait resimleri de gösteriniz.
-
-
--------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 17. Gün Ödev 1
-
-#### Yapılanlar;
-* Oluşturduğum Angular Projeme gitmek için https://github.com/dRcmd/car-rental-demo-project
-* Bootstrap entegre edildi.
-* Markalar, Renkler, Müşteriler, Araçlar ve Kiralamalar detaylı listelendi
-* Görsel düzen oluşturuldu.
-
-#### Ödev içeriği;
-* Angular Projesi oluşturun. 
-* Bootstrap entegrasyonu yapınız
-* Markaları listeleyiniz
-* Renkleri listeleyiniz
-* Müşterileri listeleyiniz
-* Arabaları listeleyiniz. (Arabaları listelerken BrandId yerine BrandName, ColorId yerine ColorName şeklinde gösteriniz)
-* Kiralamaları listeleyiniz (Rentals) CarId yerine BrandName, CustomerId yerine FirstName + LastName şeklinde gösteriniz.
+* Ödeme işlemi için api'de sahte bir banka servisi yazınız.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 ### Engin Demiroğ Kamp Kurs 15. Gün Ödev 1
