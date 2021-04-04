@@ -6,7 +6,7 @@ using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 
-namespace Core.Abstract
+namespace Business.Abstract
 {
     public interface IRentalService:IServiceRepository<Rental>
     {

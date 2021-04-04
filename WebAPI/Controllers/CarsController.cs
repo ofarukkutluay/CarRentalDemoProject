@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Business.Abstract;
 using Core.Abstract;
 using Core.Concrete;
 using DataAccess.Concrete.EntityFramework;
@@ -139,5 +140,14 @@ namespace WebAPI.Controllers
             if (result.Success) { return Ok(result); }
             return BadRequest(result);
         }
+
+        [HttpGet("getcardetailsbybrandandcolor")]
+        public IActionResult GetCarDetailsByBrandAndColor(int brandId,int colorId)
+        {
+            var result = _carService.GetCarDetailsByBrandAndColor(brandId, colorId);
+            if (result.Success) { return Ok(result); }
+            return BadRequest(result);
+        }
+        
     }
 }

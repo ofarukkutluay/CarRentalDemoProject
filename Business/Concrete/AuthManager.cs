@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Business.Abstract;
 using Core.Abstract;
 using Core.Constants;
 using Core.Entities.Concrete;
@@ -9,7 +10,7 @@ using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
 
-namespace Core.Concrete
+namespace Business.Concrete
 {
     public class AuthManager : IAuthService
     {

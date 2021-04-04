@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Core.Abstract;
+using Business.Abstract;
 using Core.Constants;
 using Core.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;

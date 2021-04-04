@@ -4,7 +4,7 @@ using System.Text;
 using Core.Business;
 using Entities.Concrete;
 
-namespace Core.Abstract
+namespace Business.Abstract
 {
     public interface ICustomerService:IServiceRepository<Customer>
     {

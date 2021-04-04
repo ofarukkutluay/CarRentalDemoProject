@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Core.Business;
 using Core.Utilities.Results;
 using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface ICarImageService:IServiceRepository<CarImage>
+    public interface IPaymentService
     {
-        IDataResult<List<CarImage>> GetCarImagesByCarId(int id);
+        IResult IsPaymentSuccess(PaymentCard paymentCard);
     }
 }

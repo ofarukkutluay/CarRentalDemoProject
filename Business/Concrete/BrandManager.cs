@@ -9,7 +9,7 @@ using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
-namespace Core.Concrete
+namespace Business.Concrete
 {
     public class BrandManager:IBrandService
     {

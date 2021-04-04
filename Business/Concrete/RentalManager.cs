@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Core.Abstract;
+using Business.Abstract;
 using Core.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -26,15 +26,16 @@ namespace Core.Concrete
 
         public IResult Add(Rental entity)
         {
-            
-            if (CheckCarReturnDate(entity.CarId).Success)
-            {
-                _rentalDal.Add(entity);
-                return new SuccessResult(Messages.RentalAdded);
-            }
 
-            return new ErrorResult();
+            //if (CheckCarReturnDate(entity.CarId).Success)
+            //{
+            //    _rentalDal.Add(entity);
+            //    return new SuccessResult(Messages.RentalAdded);
+            //}
 
+            //return new ErrorResult();
+            _rentalDal.Add(entity);
+            return new SuccessResult(Messages.RentalAdded);
 
         }
 
@@ -62,8 +63,8 @@ namespace Core.Concrete
 
         private IResult CheckCarReturnDate(int carId)
         {
-            var result = _rentalDal.Get(c => c.CarId == carId).ReturnDate.Year > 0001;
-            if (result)
+            var result = _rentalDal.Get(r => r.CarId == carId).ReturnDate;
+            if (result!=null)
             {
                 return new ErrorResult(Messages.RentalReturnDateInvalidError);
             }

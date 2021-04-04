@@ -5,7 +5,7 @@ using Core.Business;
 using Core.Entities.Concrete;
 
 
-namespace Core.Abstract
+namespace Business.Abstract
 {
     public interface IUserService:IServiceRepository<User>
     {
