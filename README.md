@@ -3,6 +3,15 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 
 #### Aynı Projeyi geliştiriyoruz,
 -------------------------------------------------------------------------------------------------------------------------------------------
+### Engin Demiroğ Kamp Kurs 20. Gün Ödev 1
+
+#### Yapılanlar;
+* Custom Error Middleware yazıldı. Fluent validation için refactoring edildi.
+
+#### Ödev içeriği;
+* Backend Custom Error Middleware ekleyip fluent validation için refactoring yapınız.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 ### Engin Demiroğ Kamp Kurs 19. Gün Ödev 3
 
 #### Yapılanlar;
