@@ -23,7 +23,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Color>>(_colorDal.GetAll());
         }
 
-        [CacheRemoveAspect("IColorService.Get")]
+        [CacheRemoveAspect("IServiceRepository")]
         public IResult Add(Color entity)
         {
             _colorDal.Add(entity);
@@ -37,14 +37,14 @@ namespace Business.Concrete
             return new SuccessDataResult<Color>(_colorDal.Get(cl => cl.Id == id));
         }
 
-        [CacheRemoveAspect("IColorService.Get")]
+        [CacheRemoveAspect("IServiceRepository")]
         public IResult Update(Color entity)
         {
             _colorDal.Update(entity);
             return new SuccessResult(Messages.ColorUpdated);
         }
 
-        [CacheRemoveAspect("IColorService.Get")]
+        [CacheRemoveAspect("IServiceRepository")]
         public IResult Delete(Color entity)
         {
             _colorDal.Delete(entity);

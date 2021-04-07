@@ -77,6 +77,8 @@ namespace WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.ConfigureCustomExceptionMiddleware(); //Kurduðumuz custom middleware ile tüm sistemi try catch içine aldýk.
+
             app.UseHttpsRedirection();
 
             app.UseStaticFiles(); //image lara ulaþabilmek için

@@ -33,6 +33,7 @@ namespace Core.Aspects.Autofac.Caching
             }
             invocation.Proceed();
             _cacheManager.Add(key, invocation.ReturnValue, _duration);
+            
         }
     }
 }
