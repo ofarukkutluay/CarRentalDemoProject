@@ -2,6 +2,19 @@
 Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-rental-demo-project
 
 #### Aynı Projeyi geliştiriyoruz,
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+### Engin Demiroğ Kamp Kurs 20. Gün Ödev 1
+
+#### Yapılanlar;
+* Findeks puan sorgulama operasyonu yazıldı
+* araçlara min findeks puanları belirlendi.
+
+#### Ödev içeriği;
+* Kiralama esnasında müşterinin findeks puanını sorgulayacak sahte servis ekleyiniz.
+* Findeks puan aralığı 0-1900 arasındadır.
+* Araçların kiralanabilmesi için her aracın ayrı ayrı minimum findeks puanı olmalıdır. Bu puanı olmayan müşteriler araç kiralayamaz.
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 ### Engin Demiroğ Kamp Kurs 20. Gün Ödev 1
 
