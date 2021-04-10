@@ -31,7 +31,8 @@ namespace DataAccess.Concrete.EntityFramework
                         DailyPrice = c.DailyPrice,
                         ModelYear = c.ModelYear,
                         Description = c.Description,
-                        ImagePath = (from a in context.CarImages where c.Id==a.CarId select a.ImagePath).FirstOrDefault()
+                        ImagePath = (from a in context.CarImages where c.Id==a.CarId select a.ImagePath).FirstOrDefault(),
+                        FindeksScore = c.FindeksScore
                     };
                 return result.ToList();
             } 
@@ -55,7 +56,8 @@ namespace DataAccess.Concrete.EntityFramework
                         ColorName = cl.Name,
                         DailyPrice = c.DailyPrice,
                         Description = c.Description,
-                        ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault()
+                        ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault(),
+                        FindeksScore = c.FindeksScore
                     };
 
                 return result.ToList();
@@ -80,7 +82,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  ColorName = cl.Name,
                                  DailyPrice = c.DailyPrice,
                                  Description = c.Description,
-                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault()
+                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault(),
+                                 FindeksScore = c.FindeksScore
 
                              };
 
@@ -106,7 +109,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  ColorName = cl.Name,
                                  DailyPrice = c.DailyPrice,
                                  Description = c.Description,
-                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault()
+                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault(),
+                                 FindeksScore = c.FindeksScore
 
                              };
 
@@ -133,7 +137,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  ColorName = cl.Name,
                                  DailyPrice = c.DailyPrice,
                                  Description = c.Description,
-                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault()
+                                 ImagePath = (from a in context.CarImages where a.CarId == c.Id select a.ImagePath).FirstOrDefault(),
+                                 FindeksScore = c.FindeksScore
 
                              };
 

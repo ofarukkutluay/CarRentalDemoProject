@@ -7,9 +7,8 @@ using Entities.Concrete;
 
 namespace Business.Abstract
 {
-    public interface IPaymentService:IServiceRepository<PaymentCard>
+    public interface IFindeksService
     {
-        IResult IsPaymentSuccess(PaymentCard paymentCard);
-        IDataResult<PaymentCard> GetByCustomerId(int id);
+        IDataResult<int> WhatFindeksScore(int customerId);
     }
 }

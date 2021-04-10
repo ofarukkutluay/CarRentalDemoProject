@@ -45,6 +45,26 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
+        [HttpGet("getbyemail")]
+        public IActionResult GetByMail(string email)
+        {
+            var result = _userService.GetByMail(email);
+            var newUser = new 
+            {
+                Id = result.Id,
+                FirstName = result.FirstName,
+                LastName = result.LastName,
+                Email = result.Email,
+                Status = result.Status
+            };
+            if (newUser!=null)
+            {
+                return Ok(newUser);
+            }
+
+            return BadRequest("Mail Bulunamadı");
+        }
+
         [HttpPost("add")]
         public IActionResult Add(User user)
         {
