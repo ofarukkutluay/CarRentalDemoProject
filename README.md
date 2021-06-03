@@ -4,7 +4,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 #### Aynı Projeyi geliştiriyoruz,
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 20. Gün Ödev 1
+### Engin Demiroğ C# Kamp 20. Gün Ödev 1
 
 #### Yapılanlar;
 * Findeks puan sorgulama operasyonu yazıldı
@@ -16,7 +16,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 * Araçların kiralanabilmesi için her aracın ayrı ayrı minimum findeks puanı olmalıdır. Bu puanı olmayan müşteriler araç kiralayamaz.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 20. Gün Ödev 1
+### Engin Demiroğ C# Kamp 20. Gün Ödev 1
 
 #### Yapılanlar;
 * Custom Error Middleware yazıldı. Fluent validation için refactoring edildi.
@@ -25,7 +25,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 * Backend Custom Error Middleware ekleyip fluent validation için refactoring yapınız.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 19. Gün Ödev 3
+### Engin Demiroğ C# Kamp 19. Gün Ödev 3
 
 #### Yapılanlar;
 * Sahte Payment service yazıldı. 
@@ -35,7 +35,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 * Ödeme işlemi için api'de sahte bir banka servisi yazınız.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 15. Gün Ödev 1
+### Engin Demiroğ C# Kamp 15. Gün Ödev 1
 
 #### Yapılanlar;
 * JWT ile ilgili ufak hatalar giderildi.
@@ -48,7 +48,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 * Cache, Transaction ve Performance aspectlerini ekleyiniz.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 14. Gün Ödev 2
+### Engin Demiroğ C# Kamp 14. Gün Ödev 2
 
 #### Yapılanlar;
 * "User" nesnesi ve karşılık gelen Users tablosundaki özellikler güncellendi.
@@ -77,7 +77,7 @@ Projemin Frontend'i Angular Projeme gitmek için https://github.com/dRcmd/car-re
 * RentACar projenize JWT entegrasyonu yapınız.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 13. Gün Ödev 1
+### Engin Demiroğ C# Kamp 13. Gün Ödev 1
 
 #### Yapılanlar;
 * "CarImage" nesnesi oluşturuldu.
@@ -105,7 +105,7 @@ RentACar projenizde;
 * Eğer bir arabaya ait resim yoksa, default bir resim gösteriniz. Bu resim şirket logonuz olabilir. (Tek elemanlı liste)
 
 -------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 12. Gün Ödev 1-2-3
+### Engin Demiroğ C# Kamp 12. Gün Ödev 1-2-3
 
 #### Yapılanlar;
 * Autofac desteği eklenerek WebApi katmanında düzenlemeler yapıldı.
@@ -120,7 +120,7 @@ RentACar projenizde;
 * ValidationAspect ekleyiniz.
 
 -------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 11. Gün Ödev 1
+### Engin Demiroğ C# Kamp 11. Gün Ödev 1
 
 #### Yapılanlar;
 * WebAPI  katmanı oluşturuldu.
@@ -133,7 +133,7 @@ RentACar projenizde;
 * Postman'de test ediniz.
 
 -------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 10. Gün Ödev 4
+### Engin Demiroğ C# Kamp 10. Gün Ödev 4
 
 #### Yapılanlar;
 * Aşağıdaki tablolar ve Entity nesneleri oluşturuldu,
@@ -155,7 +155,7 @@ RentACar projenizde;
 * Arabanın kiralanabilmesi için arabanın teslim edilmesi gerekmektedir.
 
 --------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 9. Gün Ödev 1
+### Engin Demiroğ C# Kamp 9. Gün Ödev 1
 
 #### Yapılanlar;
 * Core katmanı oluşturuldu.
@@ -176,7 +176,7 @@ _**Not :** İsteyenler Northwind projesindeki Core katmanını da ekleyebilir am
   - Kodlarınızı Github hesabınızda paylaşıp link veriniz.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 8. Gün Ödev 1
+### Engin Demiroğ C# Kamp 8. Gün Ödev 1
 
 #### Yapılanlar;
 * "Brand" nesnesi Id, Name alanları ile olıuşturuldu.
@@ -205,7 +205,7 @@ Araba Kiralama projemiz üzerinde çalışmaya devam edeceğiz.
 Ödevinize ait github linkini paylaşınız.
 
 ----------------------------------------------------------------------------------------------------------------------------------
-### Engin Demiroğ Kamp Kurs 7. Gün Ödev 2
+### Engin Demiroğ C# Kamp 7. Gün Ödev 2
 
 #### Yapılanlar;
 * ReCapProject ismi CarRentalDemoProject olarak oluşturuldu.
